@@ -1,10 +1,17 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class Main{
     public static void main(String args[]){
+        
+        System.out.print("Who are you?\n>");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.next();
+        System.out.println("Hello, " + name + "!");
+        
         int h = 0, t = 0;
         Random random = new Random();
-
+        
         System.out.println("Tossing a coin...");
         
         for(int i = 0;i < 3;i++){
